@@ -120,15 +120,3 @@ You can run the tests for this project with the following command:
 ```bash
 dotnet test
 ```
-
-## Contributing
-
-We welcome contributions to improve the API! Please feel free to fork the repository, create a feature branch, and submit a pull request with your changes.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Contact
-
-For any questions or suggestions, please feel free to contact [your-email@example.com](mailto:your-email@example.com).
