@@ -20,7 +20,7 @@ Ensure that you have the following installed:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/MyWebAPI.git
+   git clone https://github.com/tofu639/MyWebAPI.git
    cd MyWebAPI
    ```
 
