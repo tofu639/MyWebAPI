@@ -7,7 +7,7 @@ on:
     branches: [ main ]
 
 env:
-  DOTNET_VERSION: '6.0.x' # ใช้ .NET 6
+  DOTNET_VERSION: '6.0.x'
 
 jobs:
   build:
@@ -22,10 +22,10 @@ jobs:
         dotnet-version: ${{ env.DOTNET_VERSION }}
     
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore MyWebAPI/MyWebAPI.csproj
     
     - name: Build
-      run: dotnet build --configuration Release --no-restore
+      run: dotnet build MyWebAPI/MyWebAPI.csproj --configuration Release --no-restore
     
     - name: Test
-      run: dotnet test --no-restore --verbosity normal
+      run: dotnet test MyWebAPI/MyWebAPI.csproj --no-restore --verbosity normal
