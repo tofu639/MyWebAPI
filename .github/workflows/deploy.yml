@@ -7,7 +7,7 @@ on:
     branches: [ main ]
 
 env:
-  DOTNET_VERSION: '6.0.x'
+  DOTNET_VERSION: '8.0.x' # ใช้ .NET 8.0 LTS
 
 jobs:
   build:
@@ -17,7 +17,7 @@ jobs:
     - uses: actions/checkout@v3
     
     - name: Setup .NET Core
-      uses: actions/setup-dotnet@v2
+      uses: actions/setup-dotnet@v3 # ใช้ v3 ที่รองรับ .NET 8
       with:
         dotnet-version: ${{ env.DOTNET_VERSION }}
     
